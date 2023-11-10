@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Pizza } from '../shared/pizza.model';
 
 @Component({
@@ -7,9 +7,12 @@ import { Pizza } from '../shared/pizza.model';
   styleUrls: ['./pizza-container.component.css']
 })
 export class PizzaContainerComponent {
-  selectedPizza!: Pizza;
+  @Input() pizzas: Pizza[] = [];
+  @Output() pizzaSelected = new EventEmitter<Pizza>();
+  selectedPizza: Pizza = { name: '', img: '', desc: '' }; // Initialisation avec une valeur par défaut
 
   onPizzaSelected(pizza: Pizza): void {
     this.selectedPizza = pizza;
+    this.pizzaSelected.emit(pizza);
   }
 }

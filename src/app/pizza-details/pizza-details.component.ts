@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,OnInit,Input } from '@angular/core';
 import { Pizza } from '../shared/pizza.model';
 @Component({
   selector: 'app-pizza-details',

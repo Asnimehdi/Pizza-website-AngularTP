@@ -1,0 +1,21 @@
+/* Styles pour le conteneur */
+.container {
+  display: flex;
+  align-items: center; /* Aligne les éléments verticalement au centre */
+  gap: 20px;
+}
+
+/* Styles pour le composant PizzaDetailsComponent */
+.pizza-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+}
+
+/* Styles pour le composant PizzaListComponent */
+.pizza-list {
+  list-style-type: none;
+  padding: 0;
+  width: 35%; /* Ajustez la largeur selon votre préférence */
+}

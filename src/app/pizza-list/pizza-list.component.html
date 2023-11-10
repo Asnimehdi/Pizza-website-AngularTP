@@ -1,7 +1,15 @@
-<div>
+<div class="pizza-list">
+  <ul>
     <h2>Liste des Pizzas :</h2>
-    <a *ngFor="let pizza of pizzas" [href]="" class="pizza-link">
-      {{ pizza.name }}
-    </a>
+    <li *ngFor="let pizza of pizzas">
+      <p>
+        <a href="javascript:void(0);" (click)="selectPizza(pizza)">{{ pizza.name }}</a>
+      </p>
+    </li>
+    
+  </ul>
   </div>
+  
+
+ 
   

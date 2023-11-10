@@ -1,0 +1,15 @@
+img {
+    
+    height: 300px;
+    width: 400px;;
+  }
+  
+  p {
+    max-width: 500px;
+  }
+  .pizza-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }

@@ -1,2 +1,6 @@
-<app-pizza-list (pizzaSelected)="onPizzaSelected($event)"></app-pizza-list>
-<app-pizza-details [pizza]="selectedPizza"></app-pizza-details>
+<h1>TP2 ANGULAR   PIZZA</h1>
+<div class="container">
+    <app-pizza-list class="pizza-list" (pizzaSelected)="onPizzaSelected($event)"></app-pizza-list>
+    <app-pizza-details class="pizza-details" [pizza]="selectedPizza"></app-pizza-details>
+  </div>
+  

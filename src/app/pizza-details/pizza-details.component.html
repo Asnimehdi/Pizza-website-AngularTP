@@ -1,5 +1,5 @@
-<div *ngIf="pizza">
-    <h2>{{ pizza.name }}</h2>
-    <img [src]="pizza.img" alt="{{ pizza.name }} Image">
-    <p>{{ pizza.desc }}</p>
-  </div>
+<div class="pizza-details" *ngIf="pizza">
+  <h2>{{ pizza.name }}</h2>
+  <img *ngIf="pizza.img" [src]="'assets/' + pizza.img" alt="{{ pizza.name }} Image">
+  <p>{{ pizza.desc }}</p>
+</div>
